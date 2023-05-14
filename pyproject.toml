@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bubble-network"
+version = "0.1.0"
+description = "a small project to visualize csv/excel sheets"
+authors = ["MaKaNu <matti.kaupenjohann@fh-dortmund.de>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "bubble_network"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openpyxl = "^3.1.2"
+plotly = "^5.14.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.3.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
